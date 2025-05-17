@@ -1,0 +1,70 @@
+# How to Create a USB Bootloader on Chrome OS
+
+This guide will help you create a bootable USB stick for Chrome OS recovery or installation.
+
+---
+
+## Prerequisites
+
+- A USB drive (at least 8GB recommended)
+- A computer running Chrome OS (Chromebook)
+- Internet connection
+- Chrome browser
+
+---
+
+## Steps
+
+### 1. Download the Chromebook Recovery Utility
+
+1. Open the Chrome browser.
+2. Go to the [Chrome Web Store](https://chrome.google.com/webstore).
+3. Search for “Chromebook Recovery Utility” and install it.
+
+### 2. Prepare Your USB Drive
+
+- Plug the USB drive into your Chromebook.
+
+### 3. Launch the Recovery Utility
+
+1. Open the “Chromebook Recovery Utility” from your Apps.
+2. Click “Get started”.
+
+### 4. Identify Your Chromebook
+
+- Enter your Chromebook model number or select it from the list.
+
+### 5. Create the Recovery Media
+
+1. Select your USB drive from the list.
+2. Click “Continue” and follow the prompts.
+3. Wait for the process to complete (this will erase the USB drive).
+
+### 6. Boot from USB
+
+- Plug the USB into the Chromebook you want to recover.
+- Enter recovery mode (Esc + Refresh + Power).
+- Follow on-screen instructions.
+
+---
+
+## Alternative: Using Linux Command Line
+
+If you have a Chrome OS device in developer mode or access to Linux:
+
+1. Download a Chrome OS recovery image (`.bin` file) from [Google’s site](https://support.google.com/chromeos/answer/1080595?hl=en).
+2. Open a terminal.
+3. Use the following script or commands (see `create_bootable_usb.sh`).
+
+---
+
+## Notes
+
+- Creating the recovery USB will erase its contents.
+- If your Chromebook won’t boot, use this USB stick to recover it.
+
+---
+
+## Troubleshooting
+
+See `TROUBLESHOOTING.md` for common problems and fixes.
